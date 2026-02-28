@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-display-founder-attribution-for-nexo-ai-across-the-interface-add-a-subtle-founded-by-abishek-credit-line-in-the-sidebar-below-the-nexo-ai-wordmark-and-include-it-in-the-welcome-empty-state-screen-shown-in-the-chat-area-when-no-conversation-is-selected-style-it-consistently-with-the-existing-futuristic-dark-theme-using-a-muted-cyan-teal-accent-or-subdued-text-color",
+      "featureTitle": "Display founder attribution for NEXO AI across the interface. Add a subtle 'Founded by Abishek' credit line in the sidebar below the NEXO AI wordmark, and include it in the welcome/empty-state screen shown in the chat area when no conversation is selected. Style it consistently with the existing futuristic dark theme using a muted cyan/teal accent or subdued text color.",
+      "files": [
+        "frontend/src/components/ChatArea.tsx",
+        "frontend/src/components/Sidebar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

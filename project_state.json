@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Building NEXO AI — a full-featured AI chat assistant web app (similar to Gemini/ChatGPT/Perplexity) with a custom URL, multilingual support, image generation, and video generation capabilities. The app was founded by Abishek.",
+  "architectural_notes": [
+    "App name: NEXO AI — branded AI assistant web app",
+    "Modalities: text chat, image generation, video generation, multilingual NLP",
+    "Founder: Abishek — display in About/branding sections"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-full-page-ai-chat-interface-branded-as-nexo-ai-the-interface-must-include-a-sidebar-for-conversation-history-a-main-chat-area-that-displays-user-messages-and-ai-responses-in-threaded-bubbles-and-a-bottom-input-bar-with-a-text-field-and-send-button-the-layout-and-interaction-pattern-should-closely-resemble-gemini-chatgpt-or-perplexity",
+      "title": "Build a full-page AI chat interface branded as 'NEXO AI'. The interface must include a sidebar for conversation history, a main chat area that displays user messages and AI responses in threaded bubbles, and a bottom input bar with a text field and send button. The layout and interaction pattern should closely resemble Gemini, ChatGPT, or Perplexity.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-image-generation-panel-accessible-from-the-chat-interface-users-can-enter-a-text-prompt-and-the-frontend-will-display-a-placeholder-simulated-generated-image-result-using-a-deterministic-placeholder-image-based-on-the-prompt-include-an-generate-image-mode-toggle-or-button-in-the-input-bar",
+      "title": "Add an image generation panel accessible from the chat interface. Users can enter a text prompt and the frontend will display a placeholder/simulated generated image result (using a deterministic placeholder image based on the prompt). Include an 'Generate Image' mode toggle or button in the input bar.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-video-generation-panel-accessible-from-the-chat-interface-users-can-enter-a-text-prompt-and-the-frontend-will-display-a-simulated-video-result-card-animated-placeholder-or-looping-placeholder-clip-include-a-generate-video-mode-toggle-or-button-in-the-input-bar",
+      "title": "Add a video generation panel accessible from the chat interface. Users can enter a text prompt and the frontend will display a simulated video result card (animated placeholder or looping placeholder clip). Include a 'Generate Video' mode toggle or button in the input bar.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-multilingual-support-throughout-the-nexo-ai-interface-the-chat-input-and-ai-response-display-must-correctly-render-text-in-all-unicode-languages-arabic-chinese-japanese-korean-hindi-french-spanish-etc-including-right-to-left-scripts-the-ai-response-simulation-should-acknowledge-and-mirror-the-language-of-the-user-s-input",
+      "title": "Implement multilingual support throughout the NEXO AI interface. The chat input and AI response display must correctly render text in all Unicode languages (Arabic, Chinese, Japanese, Korean, Hindi, French, Spanish, etc.) including right-to-left scripts. The AI response simulation should acknowledge and mirror the language of the user's input.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-futuristic-visual-theme-for-nexo-ai-use-a-dark-background-near-black-or-deep-charcoal-glowing-cyan-teal-accent-colors-sharp-modern-typography-and-subtle-gradient-or-glassmorphism-card-effects-the-nexo-ai-wordmark-should-appear-in-the-sidebar-header-with-a-glowing-accent-style-keep-the-overall-aesthetic-consistent-across-all-panels-chat-image-video",
+      "title": "Apply a bold, futuristic visual theme for NEXO AI. Use a dark background (near-black or deep charcoal), glowing cyan/teal accent colors, sharp modern typography, and subtle gradient or glassmorphism card effects. The NEXO AI wordmark should appear in the sidebar header with a glowing accent style. Keep the overall aesthetic consistent across all panels (chat, image, video).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-founder-attribution-for-nexo-ai-across-the-interface-add-a-subtle-founded-by-abishek-credit-line-in-the-sidebar-below-the-nexo-ai-wordmark-and-include-it-in-the-welcome-empty-state-screen-shown-in-the-chat-area-when-no-conversation-is-selected-style-it-consistently-with-the-existing-futuristic-dark-theme-using-a-muted-cyan-teal-accent-or-subdued-text-color",
+      "title": "Display founder attribution for NEXO AI across the interface. Add a subtle 'Founded by Abishek' credit line in the sidebar below the NEXO AI wordmark, and include it in the welcome/empty-state screen shown in the chat area when no conversation is selected. Style it consistently with the existing futuristic dark theme using a muted cyan/teal accent or subdued text color.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "AI chat interface similar to ChatGPT/Gemini/Perplexity",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Image generation capability",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Video generation capability",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Multilingual support — understand and respond in all languages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Custom branded URL and branding under the name NEXO AI",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement a simulated AI response engine in the backend that accepts a user text message and returns a plausible AI-generated text reply. Store all conversations (sessions, messages, timestamps, role: user/assistant) persistently in the Motoko backend actor.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Display founder information: NEXO AI was founded by Abishek",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "NEXO AI",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

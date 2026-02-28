@@ -1,0 +1,16 @@
+{
+  "frontend/src/index.css": "Global styles for NEXO AI with a dark futuristic theme using OKLCH color tokens, custom glassmorphism utilities, message bubble styles, typing animation, and Outfit/JetBrains Mono font imports.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with NEXO AI custom color tokens (nexo-dark, nexo-cyan, nexo-surface, etc.), Outfit/JetBrains Mono font families, and custom glow box-shadow utilities.",
+  "frontend/src/utils/detectLanguage.ts": "Utility that detects the language of a text string using Unicode range heuristics, returning a language code, display name, and RTL flag.",
+  "frontend/src/utils/generateSimulatedResponse.ts": "Generates simulated AI responses in the detected language of the user's input, with separate response templates for text, image, and video modes.",
+  "frontend/src/utils/generatePlaceholderImage.ts": "Generates a deterministic canvas-based placeholder image as a data URI, using a hash of the prompt to create unique gradient/color patterns with the prompt text overlaid.",
+  "frontend/src/utils/generatePlaceholderVideo.ts": "Generates a deterministic animated SVG data URI as a video placeholder, with animated glow orbs, particles, and a play button based on a hash of the prompt.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations: fetching conversations, fetching a single conversation, adding conversations, deleting conversations, and adding messages.",
+  "frontend/src/components/MessageBubble.tsx": "Renders individual chat messages with different styles for user/AI bubbles, image response cards with download, video response cards with animated previews, and RTL text support.",
+  "frontend/src/components/TypingIndicator.tsx": "Animated typing indicator component showing three bouncing dots with the NEXO AI bot avatar.",
+  "frontend/src/components/ChatArea.tsx": "Main chat message display area with auto-scroll, empty state welcome screen featuring \"Founded by Abishek\" attribution below the welcome text and feature cards, and message rendering using MessageBubble with cached media generation.",
+  "frontend/src/components/InputBar.tsx": "Multi-mode input bar (text/image/video) with auto-resizing textarea, mode toggle buttons, send/generate button with loading states, and keyboard shortcut support.",
+  "frontend/src/components/Sidebar.tsx": "Collapsible sidebar with NEXO AI branding (including \"Founded by Abishek\" credit below the wordmark), conversation list with timestamps, new chat creation, and delete functionality.",
+  "frontend/src/components/ChatHeader.tsx": "Chat area header showing the current conversation title, message count, and an online status indicator.",
+  "frontend/src/App.tsx": "Root application component with full-page layout combining Sidebar, ChatHeader, ChatArea, and InputBar, with background styling and caffeine.ai attribution footer."
+}

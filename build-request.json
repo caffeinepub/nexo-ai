@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Add founder attribution: Abishek",
+  "projectName": "NEXO AI",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Display founder attribution for NEXO AI across the interface. Add a subtle 'Founded by Abishek' credit line in the sidebar below the NEXO AI wordmark, and include it in the welcome/empty-state screen shown in the chat area when no conversation is selected. Style it consistently with the existing futuristic dark theme using a muted cyan/teal accent or subdued text color.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add it's founder is Abishek"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The text 'Founded by Abishek' (or equivalent phrasing) appears in the sidebar below the NEXO AI wordmark",
+        "The founder credit also appears on the welcome/empty-state screen in the chat area",
+        "Styling is consistent with the existing futuristic dark theme (no jarring contrast or off-brand colors)",
+        "The founder text does not obstruct navigation or conversation list items in the sidebar"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "Keep the founder attribution purely in the frontend — no backend changes required"
+  ],
+  "nonGoals": [
+    "Adding a dedicated 'About' page or modal",
+    "Linking the founder name to any external profile or URL",
+    "Any backend schema or data model changes"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

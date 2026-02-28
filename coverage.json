@@ -1,0 +1,41 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-28T19:56:23.760Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-7",
+        "summary": "Display founder attribution for NEXO AI across the interface. Add a subtle 'Founded by Abishek' credit line in the sidebar below the NEXO AI wordmark, and include it in the welcome/empty-state screen shown in the chat area when no conversation is selected. Style it consistently with the existing futuristic dark theme using a muted cyan/teal accent or subdued text color.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Sidebar.tsx",
+          "frontend/src/components/ChatArea.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Sidebar.tsx",
+          "frontend/src/components/ChatArea.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/ChatArea.tsx",
+    "frontend/src/components/Sidebar.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

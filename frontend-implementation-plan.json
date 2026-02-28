@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add founder attribution: Abishek",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Display 'Founded by Abishek' credit in sidebar below NEXO AI wordmark and in the chat area welcome screen, styled consistently with the futuristic dark theme",
+      "acceptanceCriteria": [
+        "The text 'Founded by Abishek' (or equivalent phrasing) appears in the sidebar below the NEXO AI wordmark",
+        "The founder credit also appears on the welcome/empty-state screen in the chat area",
+        "Styling is consistent with the existing futuristic dark theme (no jarring contrast or off-brand colors)",
+        "The founder text does not obstruct navigation or conversation list items in the sidebar"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Sidebar.tsx",
+          "operation": "modify",
+          "description": "Add a 'Founded by Abishek' credit line below the NEXO AI wordmark at the top of the sidebar. Style it with muted cyan/teal accent (text-cyan-400/60 or text-cyan-500/50) and smaller text size (text-xs or text-sm) to keep it subtle and non-obstructive. Ensure it does not interfere with the conversation list layout or collapsible sidebar behavior."
+        },
+        {
+          "path": "frontend/src/components/ChatArea.tsx",
+          "operation": "modify",
+          "description": "Add the founder attribution text 'Founded by Abishek' to the welcome/empty-state screen displayed when no conversation is selected. Place it below the existing feature cards or welcome message. Use consistent styling with the sidebar attribution (muted cyan/teal, smaller font size) to maintain visual cohesion with the dark futuristic theme."
+        }
+      ]
+    }
+  ]
+}
